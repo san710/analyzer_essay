@@ -1,0 +1,14 @@
+body {
+  background-color: #e9ecef;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.word-count {
+  font-size: 1.1em;
+  font-weight: bold;
+}

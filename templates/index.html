@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Analyzer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="app" class="card p-4 shadow">
+            <h1 class="card-title">Essay Analyzer</h1>
+            <p class="card-text">Analyze your essay for grammar, relevance, and get suggestions.</p>
+            <div class="form-group">
+                <label for="context">Enter context for relevance:</label>
+                <textarea id="context" class="form-control" rows="4"></textarea>
+            </div>
+            <button id="startEssay" class="btn btn-primary mb-3">Start Essay</button>
+            <div class="form-group">
+                <label for="essay">Enter your essay (max 350 words):</label>
+                <textarea id="essay" class="form-control" rows="10" spellcheck="false"></textarea>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                    <span id="wordCount" class="word-count">Word count: 0 out of 350</span>
+                    <div id="warning" class="text-danger"></div>
+                </div>
+            </div>
+            <button id="analyze" class="btn btn-secondary mb-3" disabled>Analyze</button>
+            <div id="analysisResults" class="mt-4"></div>
+            <div id="timer" class="mt-4 font-weight-bold"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

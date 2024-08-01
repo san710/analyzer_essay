@@ -1,0 +1,4 @@
+Flask
+spacy
+language-tool-python
+gensim
